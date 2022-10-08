@@ -5,24 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="reset.css">
     <title>Momentum App</title>
 </head>
 <body>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?"/>
-        <button>Log In</button>
-    </form>
-    <h2 id="clock">00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="write a To Do and press Enter" required
-        />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
+    <div id="weather">
         <span></span>
         <span></span>
     </div>
+    <header class="clock__container">
+            <h2 id="clock">00:00</h2>
+    </header>
+    <main>
+        <div class="login__container">
+            <form id="login-form" class="hidden">
+                <input required maxlength="15" type="text" placeholder="What is your name?"/>
+                <input type="submit" value="Log In" />
+            </form>
+        <h1 id="greeting" class="hidden"></h1>
+        </div>
+            <form id="todo-form">
+                <input type="text" placeholder="write a To Do and press Enter" required
+                />
+            </form>
+            <ul id="todo-list">
+                <!-- JS로 사용자 리스트 차가   -->
+            </ul>
+        <footer>
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
+        </footer>
+    </main>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
